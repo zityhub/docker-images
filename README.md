@@ -9,5 +9,5 @@ con la misma versión de la imagen principal.
 
 ### Google sdk
 
-Esta imagen tiene la imagen mínima del sdk de Google y los componentes mínimos
+Esta imagen tiene la imagen mínima del sdk de Google, kubectl y los componentes mínimos
 
