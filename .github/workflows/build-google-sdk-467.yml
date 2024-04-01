@@ -28,4 +28,6 @@ jobs:
           file: ./google-sdk/467.0.0-alpine/Dockerfile
           context: ./google-sdk/467.0.0-alpine/
           push: true
-          tags: imageszh/google-sdk:latest
+          tags: |
+            imageszh/google-sdk:latest
+            imageszh/google-sdk:467.0.0
