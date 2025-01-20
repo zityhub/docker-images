@@ -4,10 +4,10 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'google-sdk/467.0.0-alpine/*'
+      - 'google-sdk/505.0.0-alpine/*'
 
 jobs:
-  build-push-google-sdk-467:
+  build-push-google-sdk-505:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,12 +22,12 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push google-sdk 467.0.0 alpine
+      - name: Build and push google-sdk 505.0.0 alpine
         uses: docker/build-push-action@v5
         with:
-          file: ./google-sdk/467.0.0-alpine/Dockerfile
-          context: ./google-sdk/467.0.0-alpine/
+          file: ./google-sdk/505.0.0-alpine/Dockerfile
+          context: ./google-sdk/505.0.0-alpine/
           push: true
           tags: |
             imageszh/google-sdk:latest
-            imageszh/google-sdk:467.0.0
+            imageszh/google-sdk:505.0.0
